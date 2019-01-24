@@ -98,6 +98,9 @@ socket.onopen = () => {
             if (msg.returnCode !== returnCode && msg.returnCode !== 0) {
                 returnCode = msg.returnCode;
             }
+            if (returnCode) {
+                console.error(msg);
+            }
             process.exit(returnCode);
         }
     };
