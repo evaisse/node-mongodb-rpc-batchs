@@ -2,15 +2,12 @@
 
 
 A RPC batch manager using websocket.
-
 You can add any worker you want to listen to commands.
 
 
 A **server** is the hub tha will command the workers and connect the clients.
 
-
-    PORT=3546 ws-task server
-    
+    PORT=3546 websocket-task server
 
 A **worker** is just a listener that check if commands are available in working directory with execution mode
 and execute them if it recieved commands from websockets.
@@ -23,13 +20,20 @@ let's say :
     
 Loading the worker will be
 
-    evaisse:~/taskmanager$ ws-task worker
+    evaisse:~/taskmanager$ websocket-task worker
 
 A **runner** is just a basic commanding alias that run the command from remote location.
 
 
-    $ ws-task exec --timeout=12 test-command.sh --foo bar
-    $ ws-task exec test-command.sh --foo bar 
+    $ websocket-task exec --timeout=12 test-command.sh --foo bar
+    $ websocket-task exec test-command.sh --foo bar 
 
-    
-    
+
+       
+## future plans
+
+ - Allow running commands from web browser
+ - task security through signature
+ - request throttling 
+ - server-level status & queue management
+ - pipe in the stdin
