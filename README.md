@@ -1,4 +1,4 @@
-# node-mongodb-rpc-batchs
+# node-websocket-taskrunner
 
 
 A RPC batch manager using websocket.
