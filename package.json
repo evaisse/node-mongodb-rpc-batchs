@@ -1,0 +1,20 @@
+{
+  "name": "node-websocket-taskrunner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rauschma/stringio": "^1.4.0",
+    "bottleneck": "^2.15.3",
+    "commander": "^2.19.0",
+    "dotenv": "^6.2.0",
+    "human-readable-ids": "^1.0.4",
+    "uniqid": "^5.0.3",
+    "ws": "^6.1.3"
+  }
+}
