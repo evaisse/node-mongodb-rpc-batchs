@@ -17,7 +17,7 @@ program
   .parse(process.argv);
 
 
-let taskName = program.args.pop();
+let taskName = program.args.shift();
 let taskArguments = Array.from(program.args);
 
 if (!taskName) {

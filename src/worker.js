@@ -29,7 +29,7 @@ const runTask = (msg, socket) => {
 
 
         if (!fs.existsSync('./' + taskName)) {
-            console.warn("Invalid task", taskName, "from client ", from);
+            console.warn("Invalid task", taskName, "from client ", msg.from);
             return Promise.reject('invalid task '+taskName);
         }
 
